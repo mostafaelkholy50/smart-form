@@ -34,7 +34,7 @@
                                 </a>
                             @endif
                         </div>
-                        <div class="language-switcher" {{ app()->getLocale() === 'ar' ? 'style="direction: rtl"' : '' }}>
+                        <div class="language-switcher">
                             <a href="{{ route('locale.switch', 'ar') }}"
                                 class="{{ app()->getLocale() === 'ar' ? 'active' : '' }}" title="العربية">AR</a>
                             <a href="{{ route('locale.switch', 'en') }}"

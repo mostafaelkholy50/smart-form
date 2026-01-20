@@ -9,6 +9,7 @@
     left: 240px;
     top: 18px;
     display: flex;
+
     gap: 10px;
     z-index: 1000;
 }
@@ -540,12 +541,12 @@ html[dir="ltr"] #Wrapper #Wrapper_Content #Container #Body #Sidebar {
 
 html[dir="ltr"] .language-switcher {
     right: auto;
-    left: 240px;
+    left: 640px;
 }
 
 @media screen and (max-width: 768px) {
     html[dir="ltr"] .language-switcher {
-        left: 10px;
+        left: 200px;
         right: auto;
     }
 }
