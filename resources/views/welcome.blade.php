@@ -64,7 +64,7 @@
                                 <div class="Menu_right"><a href="#"></a></div>
                                 <ul>
                                     <li><a href="{{ route('welcome') }}"
-                                            class="{{ request()->routeIs('welcome') ? 'active' : '' }}">{{ __('Home') }}</a>
+                                            class="{{ request()->routeIs('welcome') ? 'active' : '' }}">{{ __('nav.home') }}</a>
                                     </li>
                                     @foreach(\App\Models\Page::where('is_active', true)->orderBy('order')->get() as $p)
                                         <li><a
@@ -72,7 +72,7 @@
                                         </li>
                                     @endforeach
                                     <li><a href="{{ route('contact') }}"
-                                            class="{{ request()->routeIs('contact') ? 'active' : '' }}">{{ __('Contact') }}</a>
+                                            class="{{ request()->routeIs('contact') ? 'active' : '' }}">{{ __('nav.contact') }}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -280,19 +280,19 @@
                             <h2 class="links">{{ __('Links') }} <span>-</span></h2>
                             <div class="Widget_Links">
                                 <ul>
-                                    <li><a href="{{ route('welcome') }}">{{ __('Home') }}</a></li>
+                                    <li><a href="{{ route('welcome') }}">{{ __('nav.home') }}</a></li>
                                     @foreach(\App\Models\Page::where('is_active', true)->orderBy('order')->get() as $p)
                                         <li><a
                                                 href="{{ route('page.show', $p->slug) }}">{{ $p->getTranslation('title', app()->getLocale()) }}</a>
                                         </li>
                                     @endforeach
-                                    <li><a href="{{ route('contact') }}">{{ __('Contact') }}</a></li>
+                                    <li><a href="{{ route('contact') }}">{{ __('nav.contact') }}</a></li>
                                 </ul>
                             </div>
                             <!--/Widget_Links-->
                         </div>
                         <!--/Widget-->
-                       
+
                     <!--/Sidebar-->
                 </div>
                 <!--/Body-->
