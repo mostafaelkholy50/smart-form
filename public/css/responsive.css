@@ -550,3 +550,9 @@ html[dir="ltr"] .language-switcher {
         right: auto;
     }
 }
+@media screen and (max-width: 768px) {
+ .nav-dots {
+        left: 50px;
+        right: auto;
+    }
+}
